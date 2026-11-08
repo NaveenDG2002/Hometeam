@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef5fb;
+  --color-brand-100: #dceaf6;
+  --color-brand-500: #0878b8;
+  --color-brand-600: #0868a8;
+  --color-brand-700: #084888;
+  --color-ink: #0b1f3a;
+  --color-muted: #475569;
+  --color-line: #e2e8f0;
+
+  --font-heading: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-panel: 10px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-body text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-tight text-brand-700;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
