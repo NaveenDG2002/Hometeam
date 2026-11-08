@@ -19,6 +19,8 @@ export default function Seo({ title, description, path = '/', noIndex = false }:
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      {siteUrl && <meta property="og:image" content={`${siteUrl}/og-image.png`} />}
+      {siteUrl && <meta name="twitter:card" content="summary_large_image" />}
       {url && <meta property="og:url" content={url} />}
       {url && <link rel="canonical" href={url} />}
       {noIndex && <meta name="robots" content="noindex" />}

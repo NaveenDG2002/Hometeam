@@ -1,4 +1,5 @@
-﻿import { Link, Outlet, ScrollRestoration } from 'react-router'
+﻿import { Outlet, ScrollRestoration } from 'react-router'
+import Navbar from './Navbar'
 
 export default function RootLayout() {
   return (
@@ -10,14 +11,7 @@ export default function RootLayout() {
         Skip to main content
       </a>
 
-      {/* Temporary navigation, replaced by the real Navbar in the next stage */}
-      <nav aria-label="Temporary" className="flex gap-6 border-b border-line p-4 text-sm">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/network">Network</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <Navbar />
 
       <main id="main">
         <Outlet />
