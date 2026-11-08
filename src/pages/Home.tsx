@@ -3,6 +3,7 @@ import Hero from '../components/sections/Hero'
 import Introduction from '../components/sections/Introduction'
 import ServicesOverview from '../components/sections/ServicesOverview'
 import BusinessEcosystem from '../components/sections/BusinessEcosystem'
+import WhyHometeam from '../components/sections/WhyHometeam'
 
 export function Component() {
   return (
@@ -16,6 +17,7 @@ export function Component() {
       <Introduction />
       <ServicesOverview />
       <BusinessEcosystem />
+      <WhyHometeam />
     </>
   )
 }
