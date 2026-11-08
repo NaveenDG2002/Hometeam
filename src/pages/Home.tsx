@@ -5,6 +5,7 @@ import ServicesOverview from '../components/sections/ServicesOverview'
 import BusinessEcosystem from '../components/sections/BusinessEcosystem'
 import WhyHometeam from '../components/sections/WhyHometeam'
 import OurWork from '../components/sections/OurWork'
+import ContactCta from '../components/sections/ContactCta'
 
 export function Component() {
   return (
@@ -20,6 +21,7 @@ export function Component() {
       <BusinessEcosystem />
       <WhyHometeam />
       <OurWork />
+      <ContactCta />
     </>
   )
 }
