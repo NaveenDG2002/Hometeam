@@ -2,6 +2,7 @@
 import Hero from '../components/sections/Hero'
 import Introduction from '../components/sections/Introduction'
 import ServicesOverview from '../components/sections/ServicesOverview'
+import BusinessEcosystem from '../components/sections/BusinessEcosystem'
 
 export function Component() {
   return (
@@ -14,6 +15,7 @@ export function Component() {
       <Hero />
       <Introduction />
       <ServicesOverview />
+      <BusinessEcosystem />
     </>
   )
 }
