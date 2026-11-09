@@ -1,4 +1,5 @@
 ﻿import Seo from '../components/layout/Seo'
+import OrganizationJsonLd from '../components/layout/OrganizationJsonLd'
 import Hero from '../components/sections/Hero'
 import Introduction from '../components/sections/Introduction'
 import ServicesOverview from '../components/sections/ServicesOverview'
@@ -15,6 +16,7 @@ export function Component() {
         description="Hometeam is an IT consultancy and digital solutions company helping businesses with business analysis, technology consulting and web solutions."
         path="/"
       />
+      <OrganizationJsonLd />
       <Hero />
       <Introduction />
       <ServicesOverview />

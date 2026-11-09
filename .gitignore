@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 .env
+
+# Generated at build time by scripts/generate-seo.mjs
+public/sitemap.xml
+public/robots.txt
+
+# Backups made by scripts/optimize-images.mjs
+image-originals/
